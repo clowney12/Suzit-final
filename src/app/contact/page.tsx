@@ -12,7 +12,7 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-      <section className="pt-16 md:pt-24 pb-8">
+      <section className="pt-12 pb-8">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl font-bold font-headline">Get in Touch</h2>
