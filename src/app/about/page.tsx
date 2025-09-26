@@ -3,6 +3,9 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 const teamMembers = [
   { name: 'John Doe', role: 'CEO & Founder', imageId: 'about-team-1' },
@@ -52,6 +55,31 @@ export default function AboutPage() {
               <p className="text-muted-foreground">
                 Our journey has been one of continuous learning and adaptation. We've grown by staying true to our core belief: that technology should serve humanity, making work more efficient, safer, and more fulfilling. From our first automated conveyor system to our latest AI-powered AGVs, every product is a testament to our commitment to excellence.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="mission" className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold font-headline text-primary">Our Mission & Vision</h2>
+              <p className="text-lg text-muted-foreground">
+                Our mission is to empower industries with intelligent automation, making manufacturing smarter, safer, and more sustainable. We envision a world where human creativity is amplified by robotic precision.
+              </p>
+              <p className="text-muted-foreground">
+                At Suzit Tech, we are committed to pushing the boundaries of technology. Our team of experts works tirelessly to develop innovative solutions that not only meet but exceed our clients' expectations, ensuring they stay ahead in a competitive landscape.
+              </p>
+            </div>
+            <div className="relative h-80 rounded-lg overflow-hidden shadow-2xl">
+               <Image
+                src="https://picsum.photos/seed/101/600/400"
+                alt="Suzit Tech Team working"
+                fill
+                className="object-cover"
+                data-ai-hint="factory team"
+              />
             </div>
           </div>
         </div>
