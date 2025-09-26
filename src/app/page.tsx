@@ -31,7 +31,7 @@ const services = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="relative h-screen w-full flex items-center justify-center text-center text-white">
+      <section className="relative h-[calc(100vh-80px)] w-full flex items-center justify-center text-center text-white">
         {heroImage && (
            <Image
             src={heroImage.imageUrl}
@@ -50,7 +50,7 @@ export default function Home() {
           <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-neutral-200">
             Suzit Tech delivers world-class solutions in industrial automation, AGVs, and automotive technology to drive your business forward.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg">
               <Link href="/contact">Request a Demo</Link>
             </Button>

@@ -37,8 +37,8 @@ export function Header() {
           onClick={() => inSheet && setIsMobileMenuOpen(false)}
           className={cn(
             'transition-colors hover:text-primary',
-            pathname === link.href ? 'text-primary font-semibold' : inSheet ? 'text-lg' : 'text-neutral-100',
-            inSheet && 'py-2'
+            pathname === link.href ? 'text-primary font-semibold' : 'text-neutral-100',
+            inSheet && 'py-2 text-lg'
           )}
         >
           {link.label}

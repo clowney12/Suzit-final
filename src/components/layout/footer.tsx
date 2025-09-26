@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <footer className="bg-black border-t border-t-neutral-800">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="text-2xl font-bold text-white font-headline">
               Suzit<span className="text-primary">Tech</span>
