@@ -4,7 +4,6 @@ import { Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/services', label: 'Services' },
-  { href: '/portfolio', label: 'Portfolio' },
   { href: '/contact', label: 'Contact' },
 ];
 
