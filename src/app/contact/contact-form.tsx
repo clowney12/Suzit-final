@@ -126,9 +126,9 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Your Inquiry or Demo Request</FormLabel>
+              <FormLabel>Your Inquiry or Prototype Request</FormLabel>
               <FormControl>
-                <Textarea placeholder="Tell us about your project or what you'd like to see in a demo..." rows={5} {...field} />
+                <Textarea placeholder="Tell us about your project or what you'd like to see in a prototype..." rows={5} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
+  { href: '/portfolio', label: 'Portfolio' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -65,7 +66,7 @@ export function Header() {
 
         <div className="hidden items-center gap-4 md:flex">
           <Button asChild>
-            <Link href="/contact">Request Demo</Link>
+            <Link href="/contact">Request Prototype</Link>
           </Button>
         </div>
 
@@ -95,7 +96,7 @@ export function Header() {
                 </nav>
                  <div className="mt-auto py-6">
                     <Button asChild className="w-full" size="lg" onClick={() => setIsMobileMenuOpen(false)}>
-                        <Link href="/contact">Request Demo</Link>
+                        <Link href="/contact">Request Prototype</Link>
                     </Button>
                  </div>
               </div>

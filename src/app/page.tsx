@@ -52,7 +52,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="/contact">Request a Demo</Link>
+              <Link href="/contact">Request Prototype</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-black">
               <Link href="/services">Our Services</Link>
