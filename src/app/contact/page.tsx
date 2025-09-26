@@ -12,7 +12,7 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-      <section className="py-16 md:py-24">
+      <section className="pt-16 md:pt-24 pb-8">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl font-bold font-headline">Get in Touch</h2>
@@ -53,6 +53,10 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="pb-16 md:pb-24">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border mb-12">
               <iframe
