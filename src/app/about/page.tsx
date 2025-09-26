@@ -9,9 +9,6 @@ import { ArrowRight } from 'lucide-react';
 
 const teamMembers = [
   { name: 'John Doe', role: 'CEO & Founder', imageId: 'about-team-1' },
-  { name: 'Jane Smith', role: 'Chief Engineer', imageId: 'about-team-2' },
-  { name: 'Samuel Green', role: 'Head of Automotive', imageId: 'about-team-3' },
-  { name: 'Lisa Ray', role: 'AGV Specialist', imageId: 'about-team-4' },
 ];
 
 const values = [
@@ -112,11 +109,11 @@ export default function AboutPage() {
               The brilliant minds behind our innovative solutions.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="flex justify-center">
             {teamMembers.map((member) => {
               const image = PlaceHolderImages.find((img) => img.id === member.imageId);
               return (
-                <Card key={member.name} className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300">
+                <Card key={member.name} className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs">
                   <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20">
                     {image && <AvatarImage src={image.imageUrl} alt={member.name} data-ai-hint={image.imageHint} />}
                     <AvatarFallback className="text-4xl">{member.name.charAt(0)}</AvatarFallback>
