@@ -19,8 +19,8 @@ export default function ContactPage() {
               <p className="mt-2 text-lg text-muted-foreground">
                 Our team is ready to answer your questions and explore how we can help your business succeed.
               </p>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8 text-left">
-              <div className="flex items-start gap-4">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-1 gap-8 text-center sm:text-left">
+              <div className="flex items-start gap-4 justify-center sm:justify-start">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -31,7 +31,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 justify-center sm:justify-start">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
@@ -42,7 +42,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 justify-center sm:justify-start">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
