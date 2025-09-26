@@ -14,6 +14,17 @@ export default function ContactPage() {
       </section>
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
+           <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border mb-12">
+            <iframe
+                src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+           </div>
           <div className="grid lg:grid-cols-5 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <div>
@@ -60,21 +71,6 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
-        </div>
-      </section>
-      <section className="pb-16 md:pb-24">
-        <div className="container mx-auto px-4">
-           <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border">
-            <iframe
-                src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-           </div>
         </div>
       </section>
     </>
