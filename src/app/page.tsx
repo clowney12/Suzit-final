@@ -97,7 +97,7 @@ export default function Home() {
           </p>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             {services.map((service) => (
-              <Card key={service.title} className="flex flex-col hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+              <Card key={service.title} className="flex flex-col hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 p-0.5">
                 <CardHeader className="flex-row items-start gap-4 space-y-0">
                   <div className="bg-primary/10 p-3 rounded-full">{service.icon}</div>
                   <CardTitle className="font-headline pt-2">{service.title}</CardTitle>
