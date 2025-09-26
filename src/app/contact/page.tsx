@@ -26,6 +26,9 @@ export default function ContactPage() {
             ></iframe>
            </div>
           <div className="grid lg:grid-cols-5 gap-12">
+            <div className="lg:col-span-3 bg-white p-8 rounded-lg shadow-2xl border">
+              <ContactForm />
+            </div>
             <div className="lg:col-span-2 space-y-8">
               <div>
                 <h2 className="text-2xl font-bold font-headline">Get in Touch</h2>
@@ -66,9 +69,6 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="lg:col-span-3 bg-white p-8 rounded-lg shadow-2xl border">
-              <ContactForm />
             </div>
           </div>
         </div>
