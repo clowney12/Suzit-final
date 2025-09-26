@@ -12,11 +12,11 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-      <section className="py-12 pb-16 md:pb-24">
+      <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto mb-12">
             
-            <div className="mt-8 grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8">
               <div className="flex items-start gap-4 justify-center sm:justify-start">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Mail className="h-6 w-6 text-primary" />
