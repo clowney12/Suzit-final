@@ -52,6 +52,9 @@ export default function ContactPage() {
           </div>
 
           <div className="max-w-2xl mx-auto">
+             <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold font-headline">Our Location</h2>
+              </div>
             <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border mb-12">
               <iframe
                   src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
