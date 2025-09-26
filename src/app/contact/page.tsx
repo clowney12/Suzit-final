@@ -28,9 +28,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email Us</h3>
-                  <a href="mailto:contact@suzittech.com" className="text-muted-foreground hover:text-primary">
+                  <p className="text-muted-foreground">
                     contact@suzittech.com
-                  </a>
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4 justify-center sm:justify-start">
@@ -39,9 +39,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Call Us</h3>
-                  <a href="tel:+916361445483" className="text-muted-foreground hover:text-primary">
+                  <p className="text-muted-foreground">
                     +91 6361 445 483
-                  </a>
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4 justify-center sm:justify-start">

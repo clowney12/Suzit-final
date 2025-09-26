@@ -56,15 +56,15 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                <a href="mailto:contact@suzittech.com" className="text-sm text-neutral-400 hover:text-primary">
+                <p className="text-sm text-neutral-400">
                   contact@suzittech.com
-                </a>
+                </p>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                <a href="tel:+916361445483" className="text-sm text-neutral-400 hover:text-primary">
+                <p className="text-sm text-neutral-400">
                   +91 6361 445 483
-                </a>
+                </p>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 shrink-0" />
