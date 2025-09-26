@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "home-hero",
+      "description": "A futuristic factory with robots and automation.",
+      "imageUrl": "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NTg4MjI1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial automation"
+    },
+    {
+      "id": "about-team-1",
+      "description": "Portrait of a team member.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3OTg4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "about-team-2",
+      "description": "Portrait of a team member.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3OTg4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "about-team-3",
+      "description": "Portrait of a team member.",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3OTg4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "about-team-4",
+      "description": "Portrait of a team member.",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3OTg4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "service-automation",
+      "description": "Robotic arms working on an assembly line.",
+      "imageUrl": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyb2JvdGljJTIwYXJtfGVufDB8fHx8MTc1ODg0MzA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robotic arm"
+    },
+    {
+      "id": "service-agv",
+      "description": "Automated Guided Vehicle moving goods in a warehouse.",
+      "imageUrl": "https://images.unsplash.com/photo-1720036236694-d0a231c52563?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3YXJlaG91c2UlMjByb2JvdHxlbnwwfHx8fDE3NTg4OTY4OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "warehouse robot"
+    },
+    {
+      "id": "service-auto",
+      "description": "A modern car with its digital interface highlighted.",
+      "imageUrl": "https://images.unsplash.com/photo-1758743460347-9f374c6a7609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhdXRvbW90aXZlJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NTg4OTk0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive technology"
+    },
+    {
+      "id": "portfolio-1",
+      "description": "A complex manufacturing plant automated by Suzit Tech.",
+      "imageUrl": "https://images.unsplash.com/photo-1698294450086-e43827edeb0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW51ZmFjdHVyaW5nJTIwcGxhbnR8ZW58MHx8fHwxNzU4ODk5NDIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "manufacturing plant"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Close-up of a custom AGV in action.",
+      "imageUrl": "https://images.unsplash.com/photo-1701328778019-e95dedbf5346?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsb2dpc3RpY3MlMjByb2JvdHxlbnwwfHx8fDE3NTg4OTk0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logistics robot"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "Automotive assembly line precision robotics.",
+      "imageUrl": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXIlMjBmYWN0b3J5fGVufDB8fHx8MTc1ODg3MTc5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car factory"
+    },
+    {
+      "id": "portfolio-4",
+      "description": "Warehouse automation and sorting system.",
+      "imageUrl": "https://images.unsplash.com/photo-1651525670099-f828fb5478a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXJlaG91c2UlMjBhdXRvbWF0aW9ufGVufDB8fHx8MTc1ODg5OTQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "warehouse automation"
+    },
+    {
+      "id": "portfolio-5",
+      "description": "Control panel for an automated factory.",
+      "imageUrl": "https://images.unsplash.com/photo-1686710278078-26f028c6dad8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb250cm9sJTIwcGFuZWx8ZW58MHx8fHwxNzU4ODM5NTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "control panel"
+    },
+    {
+      "id": "portfolio-6",
+      "description": "A fleet of AGVs charging.",
+      "imageUrl": "https://images.unsplash.com/photo-1701500607794-73135b5319a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyb2JvdCUyMGZsZWV0fGVufDB8fHx8MTc1ODg5OTQyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot fleet"
+    }
+  ]
 }
