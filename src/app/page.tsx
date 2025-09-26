@@ -9,19 +9,19 @@ const heroImage = PlaceHolderImages.find((img) => img.id === 'home-hero');
 
 const services = [
   {
-    icon: <CircuitBoard className="h-8 w-8 text-primary" />,
+    icon: <CircuitBoard className="h-6 w-6 text-primary" />,
     title: 'Industrial Automation',
     description: 'Bespoke automation solutions to enhance productivity and efficiency in your manufacturing processes.',
     link: '/services#automation',
   },
   {
-    icon: <Bot className="h-8 w-8 text-primary" />,
+    icon: <Bot className="h-6 w-6 text-primary" />,
     title: 'Automated Guided Vehicles (AGV)',
     description: 'Intelligent, reliable AGVs for seamless material handling and logistics within your facilities.',
     link: '/services#agv',
   },
   {
-    icon: <Car className="h-8 w-8 text-primary" />,
+    icon: <Car className="h-6 w-6 text-primary" />,
     title: 'Automobile Solutions',
     description: 'Cutting-edge technology for the automotive industry, from assembly line robotics to in-car systems.',
     link: '/services#automobile',
@@ -31,7 +31,7 @@ const services = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
+      <section className="relative h-screen w-full flex items-center justify-center text-center text-white">
         {heroImage && (
            <Image
             src={heroImage.imageUrl}
