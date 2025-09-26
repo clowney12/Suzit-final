@@ -53,19 +53,18 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-
-           <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border mb-12">
-            <iframe
-                src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-           </div>
           <div className="max-w-4xl mx-auto">
+            <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border mb-12">
+              <iframe
+                  src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
             <div className="bg-white p-8 rounded-lg shadow-2xl border">
               <ContactForm />
             </div>
