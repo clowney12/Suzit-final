@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 const teamMembers = [
-  { name: 'John Doe', role: 'CEO & Founder', imageId: 'about-team-1' },
+  { name: 'C Jyothi Kumar', role: 'CEO & Founder', imageId: 'about-team-1' },
 ];
 
 const values = [
