@@ -9,19 +9,19 @@ const heroImage = PlaceHolderImages.find((img) => img.id === 'home-hero');
 
 const services = [
   {
-    icon: <CircuitBoard className="h-10 w-10 text-primary" />,
+    icon: <CircuitBoard className="h-8 w-8 text-primary" />,
     title: 'Industrial Automation',
     description: 'Bespoke automation solutions to enhance productivity and efficiency in your manufacturing processes.',
     link: '/services#automation',
   },
   {
-    icon: <Bot className="h-10 w-10 text-primary" />,
+    icon: <Bot className="h-8 w-8 text-primary" />,
     title: 'Automated Guided Vehicles (AGV)',
     description: 'Intelligent, reliable AGVs for seamless material handling and logistics within your facilities.',
     link: '/services#agv',
   },
   {
-    icon: <Car className="h-10 w-10 text-primary" />,
+    icon: <Car className="h-8 w-8 text-primary" />,
     title: 'Automobile Solutions',
     description: 'Cutting-edge technology for the automotive industry, from assembly line robotics to in-car systems.',
     link: '/services#automobile',
@@ -97,15 +97,15 @@ export default function Home() {
           </p>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             {services.map((service) => (
-              <Card key={service.title} className="flex flex-col hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 p-0.5">
-                <CardHeader className="flex-row items-start gap-4 space-y-0">
+              <Card key={service.title} className="flex flex-col hover:shadow-xl hover:-translate-y-1 transition-transform duration-300 p-2">
+                <CardHeader className="flex-col items-center text-center gap-4 space-y-0">
                   <div className="bg-primary/10 p-3 rounded-full">{service.icon}</div>
-                  <CardTitle className="font-headline pt-2">{service.title}</CardTitle>
+                  <CardTitle className="font-headline">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow">
+                <CardContent className="flex-grow text-center">
                   <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>
-                <div className="p-6 pt-0">
+                <div className="p-6 pt-0 text-center">
                   <Button variant="link" asChild className="p-0 h-auto">
                     <Link href={service.link}>Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
