@@ -6,10 +6,11 @@
       "imageUrl": "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NTg4MjI1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial automation"
     },
+    
     {
       "id": "about-team-1",
-      "description": "Portrait of a team member.",
-      "imageUrl": "/v0/b/gct-97-gen-ai-sandy.appspot.com/o/studio-images%2Fuser_070624_114352_952?alt=media&token=361d713c-0e86-455a-af42-e19250085888",
+      "description": "Portrait of Jyothi",
+      "imageUrl": "D:/Projoects/Suzit/Suzit-final/src/assets/jyothi-photo.png",
       "imageHint": "professional portrait"
     },
     {

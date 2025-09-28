@@ -7,8 +7,16 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
+
+
+
+
 const teamMembers = [
-  { name: 'C Jyothi Kumar', role: 'CEO & Founder', imageId: 'about-team-1' },
+  {
+    name: 'C Jyothi Kumar',
+    role: 'CEO & Founder',
+    src: '/assets/jyothi-photo-2.jpg'  // Add direct image URL
+  }
 ];
 
 const values = [
@@ -56,7 +64,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      
+
       <section id="mission" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -70,7 +78,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden shadow-2xl">
-               <Image
+              <Image
                 src="https://picsum.photos/seed/101/600/400"
                 alt="Suzit Tech Team working"
                 fill
@@ -84,7 +92,7 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
-           <div className="text-center mb-12">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold font-headline">Our Core Values</h2>
             <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
               The principles that guide our work and define our culture.
@@ -110,19 +118,20 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex justify-center">
-            {teamMembers.map((member) => {
-              const image = PlaceHolderImages.find((img) => img.id === member.imageId);
-              return (
-                <Card key={member.name} className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs">
-                  <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20">
-                    {image && <AvatarImage src={image.imageUrl} alt={member.name} data-ai-hint={image.imageHint} />}
-                    <AvatarFallback className="text-4xl">{member.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                  <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
-                  <p className="text-primary">{member.role}</p>
-                </Card>
-              );
-            })}
+            {teamMembers.map((member) => (
+              <Card key={member.name} className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs">
+                <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20">
+                  <AvatarImage
+                    src={member.src}
+                    alt={member.name}
+                  />
+                  <AvatarFallback className="text-4xl">{member.name.charAt(0)}</AvatarFallback>
+                </Avatar>
+                <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
+                <p className="text-primary">{member.role}</p>
+              </Card>
+            ))}
+
           </div>
         </div>
       </section>
