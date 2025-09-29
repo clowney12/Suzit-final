@@ -2,11 +2,12 @@ import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
-import ceoAvatar from '@/assets/ceo-avatar.png'; // Import the image
 
 const teamMembers = [
   { name: 'C Jyothi Kumar', role: 'CEO & Founder' },
 ];
+
+const ceoAvatarUrl = "https://storage.googleapis.com/gct-97-gen-ai-sandy.appspot.com/user_070624_114352_952.png";
 
 const values = [
   "Innovation at the Core",
@@ -110,7 +111,7 @@ export default function AboutPage() {
             {teamMembers.map((member) => (
               <Card key={member.name} className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs">
                 <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20">
-                  <AvatarImage src="https://storage.googleapis.com/gct-97-gen-ai-sandy.appspot.com/user_070624_114352_952.png" alt={member.name} data-ai-hint="professional portrait" />
+                  <AvatarImage src={ceoAvatarUrl} alt={member.name} data-ai-hint="professional portrait" />
                   <AvatarFallback className="text-4xl">{member.name.charAt(0)}</AvatarFallback>
                 </Avatar>
                 <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
