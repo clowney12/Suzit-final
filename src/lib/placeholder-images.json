@@ -6,10 +6,16 @@
       "imageUrl": "https://images.unsplash.com/photo-1513828742140-ccaa28f3eda0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwYXV0b21hdGlvbnxlbnwwfHx8fDE3NTg4MjI1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial automation"
     },
+    
     {
       "id": "about-team-1",
+<<<<<<< HEAD
       "description": "Portrait of a team member.",
       "imageUrl": "/images/ceo-avatar.png",
+=======
+      "description": "Portrait of Jyothi",
+      "imageUrl": "D:/Projoects/Suzit/Suzit-final/src/assets/jyothi-photo.png",
+>>>>>>> refs/remotes/origin/main
       "imageHint": "professional portrait"
     },
     {
