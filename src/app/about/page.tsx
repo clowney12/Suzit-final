@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 
 const values = [
@@ -11,6 +11,8 @@ const values = [
   "Sustainable Practices",
   "Collaborative Partnership"
 ];
+
+const ceoAvatarUrl = 'https://storage.googleapis.com/gct-97-gen-ai-sandy.appspot.com/prompt-images/Jyothi-C-Kumar.png';
 
 export default function AboutPage() {
   return (
@@ -70,6 +72,27 @@ export default function AboutPage() {
                 data-ai-hint="factory team"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold font-headline mb-12">Meet the Team</h2>
+          <div className="flex justify-center">
+            <Card className="max-w-sm w-full">
+              <CardContent className="p-6 text-center">
+                <Avatar className="w-32 h-32 mx-auto mb-4 border-4 border-primary/20">
+                  <AvatarImage src={ceoAvatarUrl} alt="C Jyothi Kumar" data-ai-hint="professional portrait" />
+                  <AvatarFallback>C</AvatarFallback>
+                </Avatar>
+                <h3 className="text-xl font-bold font-headline">C Jyothi Kumar</h3>
+                <p className="text-primary font-medium">CEO & Founder</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  With over 20 years of experience in industrial automation, C Jyothi Kumar leads Suzit Tech with a passion for innovation and a commitment to excellence.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
