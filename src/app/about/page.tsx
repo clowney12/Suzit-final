@@ -13,10 +13,10 @@ import { ArrowRight } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'C Jyothi Kumar',
-    role: 'CEO & Founder',
-    src: '/assets/jyothi-photo-2.jpg'  // Add direct image URL
-  }
+    name: "C Jyothi Kumar",
+    role: "CEO & Founder",
+    src: "/assets/jyothi-photo.png", // served from public/assets
+  },
 ];
 
 const values = [
@@ -110,31 +110,36 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-headline">Meet the Team</h2>
-            <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-              The brilliant minds behind our innovative solutions.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            {teamMembers.map((member) => (
-              <Card key={member.name} className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs">
-                <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20">
-                  <AvatarImage
-                    src={member.src}
-                    alt={member.name}
-                  />
-                  <AvatarFallback className="text-4xl">{member.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
-                <p className="text-primary">{member.role}</p>
-              </Card>
-            ))}
-
-          </div>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold font-headline">Meet the Team</h2>
+          <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
+            The brilliant minds behind our innovative solutions.
+          </p>
         </div>
-      </section>
+        <div className="flex justify-center">
+          {teamMembers.map((member) => (
+            <Card
+              key={member.name}
+              className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs"
+            >
+              <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20 rounded-full overflow-hidden">
+                <AvatarImage src={member.src} alt={member.name} />
+                <AvatarFallback>
+                  {member.name
+                    .split(' ')
+                    .map((n) => n[0])
+                    .join('')
+                    .toUpperCase()}
+                </AvatarFallback>
+              </Avatar>
+              <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
+              <p className="text-primary">{member.role}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
     </>
   );
 }
