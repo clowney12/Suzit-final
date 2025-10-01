@@ -1,6 +1,7 @@
+"use client";
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -8,7 +9,11 @@ import { ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const teamMembers = [
-  { name: 'C Jyothi Kumar', role: 'CEO & Founder', imageId: 'about-team-1' },
+  {
+    name: "C Jyothi Kumar",
+    role: "CEO & Founder",
+    src: "/assets/jyothi-photo.png",
+  },
 ];
 
 const values = [
@@ -85,44 +90,37 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold font-headline mb-12">Meet the Team</h2>
-          <div className="flex justify-center">
-            <Card className="max-w-sm w-full">
-              <CardContent className="p-6 text-center">
-                <Avatar className="w-32 h-32 mx-auto mb-4 border-4 border-primary/20">
-                  <AvatarImage src={ceoAvatarUrl} alt="C Jyothi Kumar" data-ai-hint="professional portrait" />
-                  <AvatarFallback>C</AvatarFallback>
-                </Avatar>
-                <h3 className="text-xl font-bold font-headline">C Jyothi Kumar</h3>
-                <p className="text-primary font-medium">CEO & Founder</p>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  With over 20 years of experience in industrial automation, C Jyothi Kumar leads Suzit Tech with a passion for innovation and a commitment to excellence.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-headline">Our Core Values</h2>
+            <h2 className="text-3xl font-bold font-headline">Meet the Team</h2>
             <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide our work and define our culture.
+              The brilliant minds behind our innovative solutions.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-            {values.map((value) => (
-              <div key={value} className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-primary mt-1 shrink-0" />
-                <span className="text-lg font-medium">{value}</span>
-              </div>
+          <div className="flex justify-center">
+            {teamMembers.map((member) => (
+              <Card
+                key={member.name}
+                className="text-center p-6 border-0 shadow-lg hover:-translate-y-2 transition-transform duration-300 max-w-xs"
+              >
+                <Avatar className="h-32 w-32 mx-auto border-4 border-primary/20 rounded-full overflow-hidden">
+                  <Image
+                    src={member.src}
+                    alt={member.name}
+                    width={128}
+                    height={128}
+                    className="h-full w-full object-cover rounded-full"
+                  />
+                </Avatar>
+                <h3 className="mt-4 text-xl font-bold">{member.name}</h3>
+                <p className="text-primary">{member.role}</p>
+              </Card>
             ))}
           </div>
         </div>
       </section>
     </>
   );
+
+
 }
