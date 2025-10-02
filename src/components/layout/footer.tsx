@@ -15,7 +15,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="md:col-span-1">
 
-            <Link href="/" className="ml-4 mb-2 flex items-center gap-2">
+            <Link href="/" className="  flex items-center gap-2">
               <Image
                 src="/assets/image_2025-09-30_011820536-removebg-preview.png"   // 👈 replace with your logo path in /public
                 alt="Suzit Tech Logo"
@@ -29,9 +29,9 @@ export function Footer() {
             </Link>
             <p className="mt-2 text-neutral-400 text-sm">
 
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;explore, create, deliver
+              explore, create, deliver
             </p>
-            <div className="ml-6 mt-4 flex space-x-4">
+            <div className=" mt-4 flex space-x-4">
               <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-primary">
                 <Twitter className="h-6 w-6" />
               </Link>
@@ -56,7 +56,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-semibold text-white">Our Services</h3>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4  space-y-2">
               <li><Link href="/services#automation" className="text-sm text-neutral-400 hover:text-primary">Industrial Automation</Link></li>
               <li><Link href="/services#agv" className="text-sm text-neutral-400 hover:text-primary">AGV Solutions</Link></li>
               <li><Link href="/services#automobile" className="text-sm text-neutral-400 hover:text-primary">Automobile Solutions</Link></li>
