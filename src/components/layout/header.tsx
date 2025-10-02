@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -55,10 +56,22 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="/" className="text-2xl font-bold text-white font-headline">
-          Suzit<span className="text-primary">Tech</span>
+        
+        {/* Logo + Text */}
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/assets/image_2025-09-30_011820536-removebg-preview.png"   // 👈 place logo inside /public/logo.png
+            alt="Suzit Tech Logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 object-contain"
+          />
+          <span className="text-2xl font-bold text-white font-headline">
+            Suzit<span className="text-primary">Tech</span>
+          </span>
         </Link>
 
+        {/* Desktop Nav */}
         <nav className="hidden items-center gap-6 md:flex">
           <NavLinks />
         </nav>
@@ -69,6 +82,7 @@ export function Header() {
           </Button>
         </div>
 
+        {/* Mobile Nav */}
         <div className="md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -79,25 +93,39 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="bg-black text-white border-l-neutral-800 w-full">
               <div className="flex flex-col h-full">
-                 <div className="flex justify-between items-center border-b border-b-neutral-800 pb-4">
-                  <Link href="/" className="text-2xl font-bold text-white font-headline" onClick={() => setIsMobileMenuOpen(false)}>
-                    Suzit<span className="text-primary">Tech</span>
+                <div className="flex justify-between items-center border-b border-b-neutral-800 pb-4">
+                  
+                  {/* Logo inside mobile menu */}
+                  <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Image
+                      src="/logo.png"
+                      alt="Suzit Tech Logo"
+                      width={32}
+                      height={32}
+                      className="h-8 w-8 object-contain"
+                    />
+                    <span className="text-2xl font-bold text-white font-headline">
+                      Suzit<span className="text-primary">Tech</span>
+                    </span>
                   </Link>
+
                   <SheetTrigger asChild>
                     <Button variant="ghost" size="icon" className="text-white hover:bg-neutral-800 hover:text-white">
                       <X className="h-6 w-6" />
-                       <span className="sr-only">Close menu</span>
+                      <span className="sr-only">Close menu</span>
                     </Button>
                   </SheetTrigger>
-                 </div>
+                </div>
+
                 <nav className="mt-8 flex flex-1 flex-col items-center gap-6">
                   <NavLinks inSheet />
                 </nav>
-                 <div className="mt-auto py-6">
-                    <Button asChild className="w-full" size="lg" onClick={() => setIsMobileMenuOpen(false)}>
-                        <Link href="/contact">Request Prototype</Link>
-                    </Button>
-                 </div>
+
+                <div className="mt-auto py-6">
+                  <Button asChild className="w-full" size="lg" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link href="/contact">Request Prototype</Link>
+                  </Button>
+                </div>
               </div>
             </SheetContent>
           </Sheet>

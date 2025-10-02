@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const navLinks = [
@@ -13,13 +14,24 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <Link href="/" className="text-2xl font-bold text-white font-headline">
-              Suzit<span className="text-primary">Tech</span>
+
+            <Link href="/" className="ml-4 mb-2 flex items-center gap-2">
+              <Image
+                src="/assets/image_2025-09-30_011820536-removebg-preview.png"   // 👈 replace with your logo path in /public
+                alt="Suzit Tech Logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+              />
+              <span className="text-2xl font-bold text-white font-headline">
+                Suzit<span className="text-primary">Tech</span>
+              </span>
             </Link>
-            <p className="mt-4 text-neutral-400 text-sm">
-              Engineering the Future of Automation with innovative and reliable solutions.
+            <p className="mt-2 text-neutral-400 text-sm">
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;explore, create, deliver
             </p>
-            <div className="mt-6 flex space-x-4">
+            <div className="ml-6 mt-4 flex space-x-4">
               <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-primary">
                 <Twitter className="h-6 w-6" />
               </Link>
@@ -41,7 +53,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-semibold text-white">Our Services</h3>
             <ul className="mt-4 space-y-2">

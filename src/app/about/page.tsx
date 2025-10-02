@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline">About Suzit Tech</h1>
           <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-            Pioneering industrial innovation through technology and expertise since 2010.
+            Pioneering industrial innovation through technology and expertise since 2025.
           </p>
         </div>
       </section>
@@ -53,13 +53,16 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4">
               <h2 className="text-3xl font-bold font-headline text-primary">Our Story</h2>
+
               <p className="text-lg text-muted-foreground">
                 Founded with a vision to revolutionize industrial processes, Suzit Tech began as a small team of passionate engineers. Today, we are a leading provider of automation solutions, trusted by businesses worldwide.
               </p>
-              <p className="text-muted-foreground">
+
+              <p className="text-lg text-muted-foreground">
                 Our journey has been one of continuous learning and adaptation. We've grown by staying true to our core belief: that technology should serve humanity, making work more efficient, safer, and more fulfilling. From our first automated conveyor system to our latest AI-powered AGVs, every product is a testament to our commitment to excellence.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -72,7 +75,7 @@ export default function AboutPage() {
               <p className="text-lg text-muted-foreground">
                 Our mission is to empower industries with intelligent automation, making manufacturing smarter, safer, and more sustainable. We envision a world where human creativity is amplified by robotic precision.
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-lg text-muted-foreground">
                 At Suzit Tech, we are committed to pushing the boundaries of technology. Our team of experts works tirelessly to develop innovative solutions that not only meet but exceed our clients' expectations, ensuring they stay ahead in a competitive landscape.
               </p>
             </div>
@@ -92,7 +95,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-headline">Meet the Team</h2>
+            <h2 className="text-3xl font-bold font-headline">Meet Our Team</h2>
             <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
               The brilliant minds behind our innovative solutions.
             </p>
