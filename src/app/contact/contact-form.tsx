@@ -41,7 +41,7 @@ export default function ContactForm() {
   async function onSubmit(values: FormValues) {
   setSubmissionState({ status: 'submitting', message: '' });
   try {
-    const res = await fetch("https://yourdomain.com/api/contact.php", {
+    const res = await fetch("https://suzittech.com/api/contact.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),   // send name, email, company, message

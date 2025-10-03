@@ -83,7 +83,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-t-neutral-800 pt-6 text-center text-sm text-neutral-500">
-          <p>&copy; {new Date().getFullYear()} Suzit Navigator. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Suzit Tech. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

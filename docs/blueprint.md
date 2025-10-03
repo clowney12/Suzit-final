@@ -1,4 +1,4 @@
-# **App Name**: Suzit Navigator
+# **App Name**: Suzit Tech
 
 ## Core Features:
 

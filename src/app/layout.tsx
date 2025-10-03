@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Suzit Navigator',
+  title: 'Suzit Tech',
   description: 'Industrial automation, AGV, and automobile solutions by Suzit Tech.',
 };
 
