@@ -15,7 +15,7 @@ export default function ContactPage() {
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto mb-12">
-            
+
             <div className="grid grid-cols-1 gap-8">
               <div className="flex items-start gap-4 justify-center sm:justify-start">
                 <div className="bg-primary/10 p-3 rounded-full">
@@ -45,25 +45,26 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Visit Us</h3>
-                  <p className="text-muted-foreground">123 Automation Ave, Industry City, 45678</p>
+                  <p className="text-muted-foreground">Plot no 36, Adde Vishwanathapura, Hesaraghatta Hobli,
+                    <br /> Rajankunte, Bangalore - 561023</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="max-w-2xl mx-auto">
-             <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold font-headline">Our Location</h2>
-              </div>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold font-headline">Our Location</h2>
+            </div>
             <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-xl border mb-12">
               <iframe
-                  src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=13.208722,77.547972&z=15&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-2xl border">

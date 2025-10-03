@@ -78,10 +78,6 @@ export function Footer() {
                   +91 6361 445 483
                 </p>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                <p className="text-sm text-neutral-400">123 Automation Ave, Industry City, 45678</p>
-              </li>
             </ul>
           </div>
         </div>
