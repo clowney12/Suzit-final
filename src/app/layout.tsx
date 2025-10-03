@@ -8,6 +8,11 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'Suzit Tech',
   description: 'Industrial automation, AGV, and automobile solutions by Suzit Tech.',
+  icons: {
+    icon: '/assets/image_2025-09-30_011820536-removebg-preview.png', // 👈 replace with your favicon path in /public
+    
+  },
+
 };
 
 export default function RootLayout({
@@ -18,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
