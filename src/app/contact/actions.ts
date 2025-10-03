@@ -8,21 +8,26 @@ type ActionResult = {
   error?: string;
 };
 
-export async function submitInquiry(inquiry: string): Promise<ActionResult> {
-  if (!inquiry) {
-    return { success: false, error: 'Inquiry message cannot be empty.' };
-  }
-
+export async function submitInquiry(values: {
+  name: string;
+  email: string;
+  company?: string;
+  message: string;
+}) {
   try {
-    const result = await routeInquiry({ inquiry });
-    
-    // Basic validation on the AI output
-    const validTeams = ['Sales', 'Support', 'Engineering'];
-    const team = result.team && validTeams.includes(result.team) ? result.team : 'Support';
+    const response = await fetch("https://suzittech.com/api/contact.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    });
 
-    return { success: true, team: team };
+    const data = await response.json();
+    return data;
   } catch (error) {
-    console.error('Error routing inquiry:', error);
-    return { success: false, error: 'Failed to process inquiry. Please try again later.' };
+    return { success: false, error: "Network error" };
   }
 }
+
+

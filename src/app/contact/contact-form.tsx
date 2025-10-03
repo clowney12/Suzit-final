@@ -39,26 +39,34 @@ export default function ContactForm() {
   });
 
   async function onSubmit(values: FormValues) {
-    setSubmissionState({ status: 'submitting', message: '' });
-    try {
-      const result = await submitInquiry(values.message);
-      if (result.success && result.team) {
-        setSubmissionState({
-          status: 'success',
-          message: `Thank you for your inquiry! It has been routed to our ${result.team} team. We will get back to you shortly.`,
-        });
-        form.reset();
-      } else {
-        throw new Error(result.error || 'An unknown error occurred.');
-      }
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'An unexpected error occurred. Please try again.';
+  setSubmissionState({ status: 'submitting', message: '' });
+  try {
+    const res = await fetch("https://yourdomain.com/api/contact.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),   // send name, email, company, message
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
       setSubmissionState({
-        status: 'error',
-        message: errorMessage,
+        status: 'success',
+        message: `Thank you for your inquiry! It has been routed to our ${result.team} team.`,
       });
+      form.reset();
+    } else {
+      throw new Error(result.error || "An unknown error occurred.");
     }
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : "Unexpected error occurred.";
+    setSubmissionState({
+      status: 'error',
+      message: errorMessage,
+    });
   }
+}
+
 
   if (submissionState.status === 'success') {
     return (
